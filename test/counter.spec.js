@@ -11,7 +11,7 @@ describe('Counter', () => {
         expect(wrapper.vm.count).toBe(0)
     });
 
-    it("present a the current count", () => {
+    it("present  the current count", () => {
         expect(wrapper.find('.count').html()).toContain(0)
     });
 
@@ -22,7 +22,7 @@ describe('Counter', () => {
     it("increments the count when button is clicked", () => {
         expect(wrapper.find('.count').html()).toContain(0);
         expect(wrapper.vm.count).toBe(0);
-        wrapper.find('button').trigger('click');
+        wrapper.find('.increment').trigger('click');
         expect(wrapper.vm.count).toBe(1)
     })
 });
